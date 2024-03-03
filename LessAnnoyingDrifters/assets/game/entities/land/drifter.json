@@ -240,21 +240,22 @@
 						soundStartMs: 400
 					},
 					{
-						code: "throwatentityquieter",
+						code: "throwatentitylessoften",
 						entityCodes: ["player"],
 						priority: 1.5,
 						priorityForCancel: 9,
-						mincooldown: 1000, 
-						maxcooldown: 10000, 
-						durationMs: 1800,
-						releaseAtMs: 1050,
+						mincooldown: 1000,
+						maxcooldown: 10000,
+						durationMs: 1200,
+						releaseAtMs: 700,
 						seekingRange: 15,
-						animationSpeed: 1,
+						animationSpeed: 1.5,
 						animation: "standthrowleft",
-						sound: "creature/drifter-hit"
+						sound: "creature/drifter-hit",
+						throwChance: 0.007
 					},
 					{
-						code: "seekentityquieter",
+						code: "seekentity",
 						entityCodes: ["player"],
 						priority: 1.5,
 						mincooldown: 400, 
@@ -481,6 +482,6 @@
 	sounds: {
 		hurt: "creature/drifter-hurt",
 		death: "creature/drifter-death",
-		// idle: "creature/drifter-idle"
+		idle: "creature/drifter-idle"
 	}
 }
