@@ -5,7 +5,7 @@
     "authors": [
         "toasthut"
     ],
-    "description": "Makes drifters attack with stones less and make less noise",
+    "description": "Changes drifters to attack with stones less often and make less noise",
     "version": "1.0.1",
     "dependencies": {
         "game": ""
