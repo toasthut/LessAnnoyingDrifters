@@ -478,7 +478,7 @@
 		}
 	},
 	idleSoundRange: 14,
-	idleSoundChance: 0,
+	// idleSoundChance: 0,
 	sounds: {
 		hurt: "creature/drifter-hurt",
 		death: "creature/drifter-death",

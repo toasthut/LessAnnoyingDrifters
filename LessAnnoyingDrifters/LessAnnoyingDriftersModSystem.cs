@@ -34,7 +34,11 @@ public class AiTaskThrowLessOften : AiTaskThrowAtEntity
   public override void LoadConfig(JsonObject taskConfig, JsonObject aiConfig)
   {
     base.LoadConfig(taskConfig, aiConfig);
-    this.throwChance = taskConfig["throwChance"].AsFloat(0);
+    throwChance = taskConfig["throwChance"].AsFloat(0);
+    immobile = taskConfig["immobile"].AsBool(false);
+    maxTurnAngleRad = taskConfig["maxTurnAngleDeg"].AsFloat(360) * GameMath.DEG2RAD;
+    maxOffAngleThrowRad = taskConfig["maxOffAngleThrowDeg"].AsFloat(0) * GameMath.DEG2RAD;
+    spawnAngleRad = entity.Attributes.GetFloat("spawnAngleRad");
   }
 
   public override bool ShouldExecute()
